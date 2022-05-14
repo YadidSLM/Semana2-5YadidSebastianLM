@@ -1,4 +1,55 @@
-nav{
-    
-    color:brown;
+@font-face {
+    font-family: "Encabezado";
+    src: url("../fonts/New\ Athletic\ M54.ttf");
+}
+@font-face {
+    font-family: "cabeza";
+    src: url("../fonts/Sports\ World-Regular.ttf");
+}
+body{
+    background-image: url("../tree.jpg");
+}
+header{
+    align-self: center;
+    background-color:rgba(155, 90, 61, 0.664);
+    width: 500px;
+    height: 100px;
+    position: relative;
+    left: 450px;
+}
+h1{
+    color:rgb(255, 255, 255);
+    font-family: "cabeza", "Lucida", Impact;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+section{
+    background-color:rgba(155, 90, 61, 0.664);
+    width: 300px;
+    height: 320px;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+p.pres{
+    color:rgb(255, 255, 255);
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    top: 8px;
+}
+img{
+    position: relative;
+    left: 47px;
+    bottom: 20px;
+}
+aside{
+    background-image: url("../intro.webp");
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+    position: absolute;
+    bottom: 90px;
+    left: 800px;
 }
