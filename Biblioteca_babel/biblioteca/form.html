@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <form action="./dynamics/biblioteca.php" method="post">
+        <fieldset>
+            <legend><h2>Búsqueda</h2></legend>
+            <label for="buscar">Texto a buscar:</label>
+            <input type="text" id="buscar" name="buscar" required>
+            <br/><br/>
+            <label for="timezone">Zona horaria de tu preferencia:</label>
+            <select name="timezone">
+                <option value="Asia/Hong_Kong">Asia/Hong_Kong</option>
+                <option value="Africa/Dakar">Africa/Dakar</option>
+                <option value="Indian/Christmas">Indian/Christmas</option>
+                <option value="America/Mexico_City">America/Mexico_City</option>
+            </select>
+            <br/><br/>
+            <label for="modo">Modo:</label>
+            <select name="modo">
+                <option value="Orden">Orden</option>
+                <option value="Normal">Normal</option>
+                <option value="Palabras">Palabras</option>
+            </select>
+            <br/><br/>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
