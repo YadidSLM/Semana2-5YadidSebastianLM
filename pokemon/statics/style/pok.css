@@ -1,0 +1,12 @@
+body{
+    background-color: crimson;
+}
+#Logo{
+    align-items: center;
+    text-align: center;
+}
+#text{
+    width: 600px;
+    height: 50px;
+    
+}

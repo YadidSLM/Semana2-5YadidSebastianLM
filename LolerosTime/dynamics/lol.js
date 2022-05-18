@@ -8,9 +8,21 @@ class tirador
         this.habilidades = habilidades;
     }
     //Las cosas que puede hacer un tirador
+    distancia()
+    {
+        console.log(Su );
+    }
     ataque()
     {
-        console.log(this.nombre + 'tiene un ataque de 50% por sus habilidades' + this.habilidades);
+        console.log(this.nombre + 'tiene un ataque de 50% + 24% por sus habilidades: ' + this.habilidades);
+    }
+    vida()
+    {
+
+    }
+    mana()
+    {
+
     }
 }
-const gabi = new tirador('gabi', '80% ganado', 'Corta distancia rápida');
+const Gabi = new tirador('Gabi ', '80/100 pasrtidas ganadas', 'Rápida.');

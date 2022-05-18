@@ -1,0 +1,14 @@
+#uno{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color:goldenrod;
+    color:aliceblue;
+}
+#dos{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: darkcyan;
+    color:aliceblue;
+}

@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    text-decoration-color:chocolate;
+}
+.tar{
+    background-color: cadetblue;
+    width: 600px;
+    height: 50px;
+    border-radius: 3% 3% 3% 3%;
+    text-align: center;
+}
+#cuadro{
+    
+    background-color: peachpuff;
+    width: 25%;
+    height: 100%;
+    padding: 5%;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    top: 100%;
+}
