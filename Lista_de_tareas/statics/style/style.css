@@ -1,6 +1,23 @@
+#padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cuadro{
+    background-color: rgba(49, 228, 33, 0.692);
+    width: 25%;
+    height: 100%;
+    padding: 5%;
+    text-align: center;
+    border: 5px solid grey;
+}
 h1{
     text-align: center;
     text-decoration-color:chocolate;
+}
+#tareas{
+    justify-content: center;
+    align-items: center;
 }
 .tar{
     background-color: cadetblue;
@@ -8,15 +25,4 @@ h1{
     height: 50px;
     border-radius: 3% 3% 3% 3%;
     text-align: center;
-}
-#cuadro{
-    
-    background-color: peachpuff;
-    width: 25%;
-    height: 100%;
-    padding: 5%;
-    position: relative;
-    text-align: center;
-    left: 50%;
-    top: 100%;
 }

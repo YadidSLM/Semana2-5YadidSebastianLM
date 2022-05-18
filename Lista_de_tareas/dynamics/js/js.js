@@ -11,6 +11,7 @@ anadir.addEventListener("click", (evento) =>{
         console.log(tareas.outerHTML);
         //console.log(evento.target.innerHTML);
         //tareas.innerHTML = tareas.outerHTML + tareas.innerHTML + titulo.value + ' ' + materia.value;
-        tareas.innerHTML = tareas.innerHTML + '<div class="tar">' + titulo.value + '</div>' + '<br/>';
+        tareas.innerHTML = tareas.innerHTML + '<br/>' + '<div class="tar">' + titulo.value + '</div>';
+        
     }
 });
