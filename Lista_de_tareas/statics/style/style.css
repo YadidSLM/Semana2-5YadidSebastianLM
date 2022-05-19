@@ -1,3 +1,6 @@
+body{
+    background-color:khaki;
+}
 #padre{
     display: flex;
     justify-content: center;
@@ -5,24 +8,25 @@
 }
 #cuadro{
     background-color: rgba(49, 228, 33, 0.692);
-    width: 25%;
+    width: 50%;
     height: 100%;
     padding: 5%;
     text-align: center;
     border: 5px solid grey;
+    border-radius: 8%;
+    box-sizing:content-box;
 }
 h1{
     text-align: center;
     text-decoration-color:chocolate;
 }
 #tareas{
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 .tar{
     background-color: cadetblue;
-    width: 600px;
-    height: 50px;
+    width: 100%;
+    height: 60px;
     border-radius: 3% 3% 3% 3%;
     text-align: center;
 }

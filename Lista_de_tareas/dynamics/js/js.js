@@ -11,7 +11,22 @@ anadir.addEventListener("click", (evento) =>{
         console.log(tareas.outerHTML);
         //console.log(evento.target.innerHTML);
         //tareas.innerHTML = tareas.outerHTML + tareas.innerHTML + titulo.value + ' ' + materia.value;
-        tareas.innerHTML = tareas.innerHTML + '<br/>' + '<div class="tar">' + titulo.value + '</div>';
-        
+        //tareas.style.alignSelf = "center";
+        tareas.innerHTML = tareas.innerHTML + '<br/>' + '<div class="tar">'+ '<button id="marcar">Marcar como acabada</button>' + '<button id="borrar">Eliminar</button>' + materia.value  + ': ' + titulo.value + '</div>';
     }
 });
+tareas.addEventListener("click", (evento) =>{
+    if(evento.target.getElementById = "borrar")
+    {
+        evento.target.parentElement.outerHTML = '';
+        console.log(evento.target.parentElement.outerHTML);
+        console.log(evento.target.parentElement);
+        console.log(evento.target);
+        console.log(evento);
+    }
+    else if(evento.target.getElementById = "marca")
+    {
+        evento.target.style.color = "blue";
+        
+    }
+})
