@@ -26,14 +26,15 @@ anadir.addEventListener("click", (evento) =>{
             otraMateria.style.display = "none";
             materia.value = otraMateria.value;
         }
+        //Creo que el div class tar es un problema para detectar los botones abajo.
         tareas.innerHTML = tareas.innerHTML + '<br/>' + '<div class="tar">'+ '<button id="marcar">Marcar como acabada</button>' + '<span> </span>' + '<button id="borrar">Eliminar</button>' + materia.value  + ': ' + titulo.value + '</div>';
     }
 });
 tareas.addEventListener("click", (evento) =>{
-    if(evento.target.getElementById == "marcar")
+    const tar = document.getElementsByClassName("tar");
+    if(evento.target.getElementsByClassName == "tar" && evento.target.getElementById == "marcar1")
     {
-        const marcar = document.getElementById("marcar");
-        marcar.style.backgroundColor = "blue";
+        tar.style.backgroundColor = "blue";
         console.log("Completada");
     }
     if(evento.target.getElementById == "borrar")
