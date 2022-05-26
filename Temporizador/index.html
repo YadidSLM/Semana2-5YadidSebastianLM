@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temporizaodr</title>
+    <title>Temporizador</title>
     <link rel="stylesheet" href="./statics/style/index.css"> 
     <link rel="stylesheet" href="./libs/css/bootstrap.min.css">
 </head>
@@ -28,14 +28,14 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Temporizador</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <label for="minutos">Minutos: </label>
-                    <input id="minutos" type="number" name="minutos">
+                    <input id="minutos" type="number" name="minutos" min="0" max="59">
                     <label for="segundos">Segundos: </label>
-                    <input id="segundos" type="number" name="segundos">
+                    <input id="segundos" type="number" name="segundos" min="0" max="59">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
