@@ -14,13 +14,14 @@ let passedM = 0;
 let pase = 0;
 
 iniciar.addEventListener("click", (evento) =>{
-    if(minutos.value != "" && segundos.value != "" && pase < 2)
+    if(minutos.value != "" && segundos.value != "" && pase < 2 && minutos.value >= 0 && segundos.value >= 0)
     {
         pase++;
         min = minutos.value;
         seg = segundos.value;
         tempoS = setInterval(()=>{
-            seg--;
+            if(seg > 0)
+                seg--;
             console.log(min + ":" + seg);
             if(seg == 0 && min == 0)
             {
@@ -29,17 +30,19 @@ iniciar.addEventListener("click", (evento) =>{
                 clearInterval(tempoM);
                 alert("Ring ring ha terminado el tiempo");
             }
-            else if(min > 0)
+            else if(seg == 0)
             {
-                if(seg == 0)
-                {
-                    min--;
-                }
                 seg = 59;
+                min--;
             }
             registro.innerHTML = " ";
             registro.innerHTML += "<p>" + min + " " + ":" + " "+ seg + "</p>";
         }, 1000)
+    }
+    else
+    {
+        segundos.value = 0;
+        minutos.value = 0;
     }
     
 });

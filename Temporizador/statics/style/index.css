@@ -1,8 +1,12 @@
+#cuerpo{
+    background-color: darkslategray;
+}
 main, #DatosT{
     width: 100vw;
     /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    color: aliceblue;
     /* column-gap: ; */
 }
